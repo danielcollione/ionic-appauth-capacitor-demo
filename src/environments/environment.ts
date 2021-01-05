@@ -6,9 +6,9 @@ export const environment = {
   production: false,
   auth_config: {
     client_id: 'appauth',
-    server_host: 'http://localhost:5200',
-    redirect_url: 'com.appauth.demo://callback',
-    end_session_redirect_url: 'com.appauth.demo://endsession',
+    server_host: 'br.com.hausenn.app://callback',
+    redirect_url: 'http://localhost:8091/callback',
+    end_session_redirect_url: 'br.com.hausenn.app://endsession',
     scopes: 'openid offline_access',
     pkce: true
   }
