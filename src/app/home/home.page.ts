@@ -36,7 +36,7 @@ export class HomePage implements OnInit, OnDestroy {
 
   private onSignOutSuccess(action: IAuthAction) {
     this.action = action;
-
+    console.log(this.action.tokenResponse.accessToken);
     if (action.action === AuthActions.SignOutSuccess) {
       this.navCtrl.navigateRoot('landing');
     }

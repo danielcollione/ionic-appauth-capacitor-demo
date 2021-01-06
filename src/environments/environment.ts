@@ -5,11 +5,11 @@
 export const environment = {
   production: false,
   auth_config: {
-    client_id: 'appauth',
-    server_host: 'https://stage.padotec.com.br/auth/realms/hausenn/protocol/openid-connect/auth?client_id=hausenn-client-app&response_type=code&state=fj8o3n7bdy1op5&scope=openid profile offline_access&redirect_uri=http://localhost:8091/callback',
-    redirect_url: 'http://localhost:8091/callback',
+    client_id: 'hausenn-client-app',
+    server_host: 'https://stage.padotec.com.br/auth/realms/hausenn',
+    redirect_url: 'br.com.hausenn.app://callback',
     end_session_redirect_url: 'br.com.hausenn.app://endsession',
-    scopes: 'openid offline_access',
+    scopes: 'openid profile offline_access',
     pkce: true
   }
 };
